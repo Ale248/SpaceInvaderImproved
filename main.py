@@ -101,7 +101,6 @@ def button(msg, x, y, w, h, ic, ac, action=None):
     else:
         pygame.draw.rect(game_display, ic, (x, y, w, h))
 
-    # textSurf, textRect = text_objects(msg, smallText)
     text_surface = small_font.render(msg, True, black)
     text_rect = text_surface.get_rect()
     text_rect.center = ((x + (w / 2)), (y + (h / 2)))
